@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Priyadarshanvijay/KISAN_NETWORK/issues"
   },
-  "homepage": "https://github.com/Priyadarshanvijay/KISAN_NETWORK#readme"
+  "homepage": "https://github.com/Priyadarshanvijay/KISAN_NETWORK#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
