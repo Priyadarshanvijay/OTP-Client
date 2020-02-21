@@ -1,0 +1,19 @@
+{
+  "name": "kisan_network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyadarshanvijay/KISAN_NETWORK.git"
+  },
+  "author": "PriyadarshanVijay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priyadarshanvijay/KISAN_NETWORK/issues"
+  },
+  "homepage": "https://github.com/Priyadarshanvijay/KISAN_NETWORK#readme"
+}
