@@ -30,8 +30,8 @@ function processUser() {
     .then(response => {
         data = JSON.parse(response);
         contact = data;
-        // document.getElementById('name').innerText += ' ' + jsonDATA.first_name + ' ' + jsonDATA.last_name;
-        // document.getElementById('phone_number').innerText += ' ' + jsonDATA.mobile_number;
+        document.getElementById('name').innerText += ' ' + data.first_name + ' ' + data.last_name;
+        document.getElementById('phone_number').innerText += ' ' + data.mobile_number;
         generateOTP();
     })
     .catch(e => {
