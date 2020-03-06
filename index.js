@@ -10,6 +10,11 @@ const client = require('twilio')(process.env.ACCOUNTSID, process.env.AUTHTOKEN);
 app.use(express.json());
 app.use(express.static('public'));
 app.use(cors());
+
+app.get('/', (req,res) => {
+    res.render('./index.html');
+})
+
 app.get('/ShowContacts', async (req, res) => {
     try {
         const contactToShow = await getContactDetails(req.query.id);
