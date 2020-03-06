@@ -1,16 +1,21 @@
+<!-- SAMPLE SENT OTP DETAIL CARD WE USED -->
+
 <div class="ui column sixteen wide fluid">
-  <div class="ui link raised card fluid">
-    <div class="content">
-        <div class="header">
-            ${cardData.first_name} ${cardData.last_name}
-        </div>
-        <div class="meta">
-           Time: ${cardData.time_of_sending.getDate()} ${cardData.time_of_sending.getHours()}:${cardData.time_of_sending.getMinutes()}
-        </div>
-        <div class="meta">
-            Mobile Number: ${cardData.mobile_number}
-        </div>
-        OTP SENT : ${cardData.otp}
+    <div class="ui link raised card fluid">
+      <div class="content">
+          <div class="header">
+              ${cardData.first_name} ${cardData.last_name}
+          </div>
+          <div class="meta">
+             Time: ${time_of_sending.toLocaleTimeString()}  
+          </div>
+          <div class="meta">
+             Date: ${time_of_sending.toLocaleDateString()}
+          </div>
+          <div class="meta">
+              Mobile Number: ${cardData.mobile_number}
+          </div>
+          OTP SENT : ${cardData.otp}
+      </div>
     </div>
   </div>
-</div>

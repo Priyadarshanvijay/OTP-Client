@@ -5,6 +5,8 @@ Can currently send sms only to +919001189016 as FOR sending to +919810153260, ot
 
 USed Semantic UI for responsive web design
 
+Used comments upto my best knowledge
+
 Where Improvements can be done : 
 1. Pagination
 2. Search Feature in sent otp
