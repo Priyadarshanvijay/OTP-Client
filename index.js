@@ -4,16 +4,15 @@ const fs = require('fs').promises;
 const path = require('path');
 const app = express();
 const cors = require('cors');
+const http = require('http');
+const server = http.Server(app);
 require('dotenv').config()
 const client = require('twilio')(process.env.ACCOUNTSID, process.env.AUTHTOKEN);
 
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static('client'));
 app.use(cors());
 
-app.get('/', (req,res) => {
-    res.render('./index.html');
-})
 
 app.get('/ShowContacts', async (req, res) => {
     try {
@@ -163,4 +162,4 @@ async function getContactDetails(id) {
     return dataToSend;
 };
 const port = process.env.PORT;
-app.listen(port, () => console.log(`Server listning on port ${port}`));
+server.listen(port, () => console.log(`Server listning on port ${port}`));
