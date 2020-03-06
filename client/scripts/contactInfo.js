@@ -4,7 +4,7 @@ function processUser() {
     id = (parameters.split("=")[1]);
     (async () => {
         try {
-            let url = 'http://localhost:3030/ShowContacts?id=';
+            let url = '/ShowContacts?id=';
             url += id;
             const response = await fetch(url, { method: "GET" });
             if (response.status === 404) throw new Error('User not found');

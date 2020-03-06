@@ -161,5 +161,5 @@ async function getContactDetails(id) {
     }
     return dataToSend;
 };
-const port = process.env.PORT;
+const port = process.env.PORT || 3030;
 server.listen(port, () => console.log(`Server listning on port ${port}`));

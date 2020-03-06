@@ -19,7 +19,7 @@ function processUser() {
         return;
     }
     let id = (parameters.split("=")[1]);
-    let url = 'http://localhost:3030/ShowContacts?id=';
+    let url = '/ShowContacts?id=';
     url += id;
     let data;
     fetch(url, {method:"GET"})
@@ -40,7 +40,7 @@ function processUser() {
 }
 window.onload = processUser();
 async function generateOTP() {
-    let url = 'http://localhost:3030/getOTP';
+    let url = '/getOTP';
     fetch(url, { method: "GET" })
     .then(response => {
         if (response.status === 404) throw new Error('Unable to generate otp');
@@ -81,7 +81,7 @@ myForm.addEventListener('submit', (event) => {
         headers : myHeaders,
         body: raw
     };
-    const url = "http://localhost:3030/otpSent";
+    const url = "/otpSent";
     fetch(url, requestOptions)
     .then(response => response.json())
     .then(response => {

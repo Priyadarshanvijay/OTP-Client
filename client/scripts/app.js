@@ -42,7 +42,7 @@ let otp = $();
 
 (async () => {
   try {
-    const response = await fetch('http://localhost:3030/ShowContacts', { method: "GET" });
+    const response = await fetch('/ShowContacts', { method: "GET" });
     const data = await response.text();
     const jsonDATA = JSON.parse(data);
     jsonDATA.forEach(function (item, i) {
@@ -57,7 +57,7 @@ let otp = $();
 
 (async () => {
   try {
-    const response = await fetch('http://localhost:3030/getMessages', { method: "GET" });
+    const response = await fetch('/getMessages', { method: "GET" });
     const data = await response.text();
     const jsonDATA = JSON.parse(data);
     const noOfMessages = jsonDATA.length;
