@@ -1,6 +1,15 @@
 App Deployed on :
 https://kisan-network-priyadarshan.herokuapp.com/
 
+To run on local machine, do the following : 
+
+1. Install node.js @ latest
+2. Install npm
+3. run 'npm install'
+4. run 'npm start' or 'node index.js'
+5. Go to http://localhost:3030/
+6. Done!
+
 Can currently send sms only to +919001189016 as FOR sending to +919810153260, otp was required
 
 USed Semantic UI for responsive web design
