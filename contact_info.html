@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a href="/index.html" class="header item">
+                <img class="logo" src="./components/logos/logo.jpeg">
+                KISAN NETWORK
+            </a>
+        </div>
+    </div>
+
+    <div class="ui main text container">
+        <div class="ui raised doubling card fluid">
+            <div class="content">
+                <div class="ui stackable grid">
+                    <div class="center aligned column sixteen wide">
+                        <div class="ui header" id="name"></div>
+                    </div>
+                    <div class="column sixteen wide">
+                        <div class="ui stackable grid">
+                            <div class="ui two column row">
+                                <div class="center aligned column">
+                                    <i class="ui mobile icon"></i>
+                                    <span class="ui meta" id="phone_number"></span>
+                                </div>
+                                <div class="center aligned column">
+                                    <i class="ui at icon"></i>
+                                    <span class="ui meta" id="email_id"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column five wide"></div>
+                    <div class="column six wide">
+                        <button class="ui primary button fluid" id="send_message">Send Message</button>
+                    </div>
+                    <div class="column five wide"></div>
+                </div>
+            </div>
+        </div>
+        <div class="ui center aligned grid container">
+            <div class="ui row">
+                <a class="ui red button" href="./index.html">Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./scripts/contactInfo.js"></script>
+
+</html>

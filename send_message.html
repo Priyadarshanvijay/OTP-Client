@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+            <a href="/index.html" class="header item">
+                <img class="logo" src="./components/logos/logo.jpeg">
+                KISAN NETWORK
+            </a>
+        </div>
+    </div>
+    <div class="ui main text container">
+        <form class="ui loading form" name="main_form" id="m_form">
+            <div class="field">
+                <textarea name="message" id="otp_message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="ui success message">
+                <div class="header">OTP Sent</div>
+                <p>You've successfully sent the OTP on Mobile Number</p>
+            </div>
+            <div class="ui error message">
+                <div class="header">Unable To Send OTP</div>
+                <p>Unable to send otp! Please try again later</p>
+            </div>
+            <div class="ui center aligned grid container">
+                <div class="ui row">
+                    <button type="submit" class="ui green button" id="btn_validate">Send</button>
+                </div>
+            </div>
+        </form>
+        <div class="ui center aligned grid container">
+            <div class="ui row">
+                <a class="ui red button" href="./index.html">Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script> -->
+
+<script src="./scripts/send_message.js"></script>
+
+</html>
